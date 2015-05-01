@@ -8,9 +8,9 @@ import scala.util.Random
 @RunWith(classOf[JUnitRunner])
 class FizzBuzzTest extends FunSuite {
   
-  val multiplosDe3 = (1 to 100).filter{x => x%3 == 0 && x%5 != 0}
-  val multiplosDe5 = (1 to 100).filter{x => x%5 == 0 && x%3 != 0}
-  val noMultiplos =  (1 to 100).filter{x => x%5 != 0 && x%3 != 0}
+  val multiplosDe3 = (1 to 100) filter {x => x%3 == 0 && x%5 != 0}
+  val multiplosDe5 = (1 to 100) filter {x => x%5 == 0 && x%3 != 0}
+  val noMultiplos =  (1 to 100) filter {x => x%5 != 0 && x%3 != 0}
   
   test("3 es Fizz"){
     assert(FizzBuzz.doFizzBuzz(3) === "Fizz")
